@@ -106,7 +106,12 @@ function numberInput(num) {
 
 function operatorInput(operator) {
 
-    if(operator1 != null && operator2 === null) {
+    if(operator1 == null && operator2 == null) {
+        operator1 = operator;
+        num1 = displayResult;
+    }
+
+    else if(operator1 !== null && operator2 == null) {
         operator2 = operator;
         num2 = displayResult;
         result = operate(Number(num1), Number(num2), operator1);
@@ -115,7 +120,7 @@ function operatorInput(operator) {
         result = null;
     }
 
-    else if(operator1 != null && operator2 != null) {
+    else if(operator1 !== null && operator2 !== null) {
         num2 = displayResult;
         result = operate(Number(num1), Number(num2), operator2);
         operator2 = operator;
@@ -123,11 +128,6 @@ function operatorInput(operator) {
         num1 = displayResult;
         result = null;
     } 
-
-    else { 
-        operator1 = operator;
-        num1 = displayResult;
-    }
 }
 
 function equalInput() {
@@ -136,7 +136,7 @@ function equalInput() {
         displayResult = displayResult;
     } 
     
-    else if(operator2 != null) {
+    else if(operator2 !== null) {
         num2 = displayResult;
         result = operate(Number(num1), Number(num2), operator2);
 
