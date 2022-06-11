@@ -262,7 +262,7 @@ document.addEventListener("keydown", (event) => {
         updateDisplay();
     }
     else if(pressedKey == Backspace) {
-        displayResult -= num1;
+        //displayResult
         updateDisplay();
     }
     else if(pressedKey == "Enter") {
