@@ -261,4 +261,8 @@ document.addEventListener("keydown", (event) => {
         dotInput(pressedKey);
         updateDisplay();
     }
+    else if(pressedKey == "c") {
+        clearInput();
+        updateDisplay();
+    }
 });
