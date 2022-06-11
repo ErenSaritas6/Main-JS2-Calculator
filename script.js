@@ -261,8 +261,12 @@ document.addEventListener("keydown", (event) => {
         dotInput(pressedKey);
         updateDisplay();
     }
+<<<<<<< Updated upstream
     else if(pressedKey == "c") {
         clearInput();
         updateDisplay();
     }
 });
+=======
+});
+>>>>>>> Stashed changes
