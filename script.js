@@ -80,7 +80,7 @@ buttonClick();
 
 function numberInput(num) {
     if(operator1 === null) {
-        if(displayResult === "0" || displayResult === 0) {
+        if(displayResult == "0") {
             displayResult = num;
         }
 
