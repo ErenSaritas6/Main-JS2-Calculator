@@ -261,12 +261,4 @@ document.addEventListener("keydown", (event) => {
         dotInput(pressedKey);
         updateDisplay();
     }
-    else if(pressedKey == Backspace) {
-        //displayResult
-        updateDisplay();
-    }
-    else if(pressedKey == "Enter") {
-        equalInput("=");
-        displayResult();
-    }
 });
